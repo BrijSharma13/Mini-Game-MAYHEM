@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Explosive Wiper</title>
+  <link rel="stylesheet" href="styles.css"></link>
+  <script src="ExplosiveWiper.js" charset="utf-8"></script>
+  <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+</head>
+<body>
+
+  <style>
+
+  .container {
+    width: 500px;
+    align-content: center;
+  }
+
+  .grid {
+    height: 448px;
+    width: 422px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    margin-left: 500px;
+    margin-top: 97px;
+    border: 10px solid black;
+    margin-bottom: 10px;
+  }
+
+  div {
+    text-align: center;
+    font-family: 'Common Pixel', sans-serif;
+
+  }
+  .valid {
+    height: 40px;
+    width: 40px;
+    border: 5px solid;
+    border-color: #002BFF #4B6AFF #4B6AFF #002BFF;
+    box-sizing: border-box;
+  }
+
+  .checked {
+    height: 40px;
+    width: 40px;
+    border: 2px solid;
+    background-color: red;
+    border-color: lime;
+    box-sizing: border-box;
+  }
+
+  .bomb {
+    height: 40px;
+    width: 40px;
+    border: 5px solid;
+    border-color: #002BFF #4B6AFF #4B6AFF #002BFF;
+    box-sizing: border-box;
+  }
+
+  .one {
+    color: #FFD100;
+  }
+
+  .two {
+    color: #4199d3;
+  }
+
+  .three {
+    color: #57da59;
+  }
+
+  .four{
+    color: #C880D6;
+  }
+
+  #result {
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 516px;
+    font-size: 38px;
+  }
+
+  .bombRetry {
+    background-color: lime;
+    height: 40px;
+    width: 180px;
+    position: absolute;
+    bottom: 79px;
+    left: 625px;
+  }
+
+  .bombRetryBTN {
+    position: absolute;
+    height: 40px;
+    width: 180px;
+    bottom: 0px;
+    left: 0px;
+    background-color: transparent;
+  }
+
+  .bombBack {
+    background-color: lime;
+    height: 20px;
+    width: 290px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 25px;
+  }
+
+  .bombBackBTN {
+    position: absolute;
+    height: 20px;
+    width: 290px;
+    bottom: 0px;
+    left: 0px;
+    background-color: transparent;
+  }
+
+  .flagsLeft {
+    position: absolute;
+    bottom: 140px;
+    left: 570px;
+    font-size: 18px;
+  }
+
+  </style>
+
+  <div class="gridRow1">
+  </div>
+
+  <div class="gridRow2">
+  </div>
+
+  <div class="gridRow3">
+  </div>
+
+  <div class="gridRow4">
+  </div>
+
+  <div class="gridRow5">
+  </div>
+
+  <div class="gridRow6">
+  </div>
+
+  <div class="gridRow7">
+  </div>
+
+  <div class="gridRow8">
+  </div>
+
+  <div class="gridRow9">
+  </div>
+
+  <div class="gridRow10">
+  </div>
+
+  <div class="gridRow11">
+  </div>
+
+  <div class="gridRow12">
+  </div>
+
+  <div class="gridRow13">
+  </div>
+
+  <div class="gridColumn1">
+  </div>
+
+  <div class="gridColumn2">
+  </div>
+
+  <div class="gridColumn3">
+  </div>
+
+  <div class="gridColumn4">
+  </div>
+
+  <div class="gridColumn5">
+  </div>
+
+  <div class="gridColumn6">
+  </div>
+
+  <div class="gridColumn7">
+  </div>
+
+  <div class="gridColumn8">
+  </div>
+
+  <div class="lineSlider1">
+  </div>
+
+  <div class="lineSlider2">
+  </div>
+
+  <div class="lineSlider3">
+  </div>
+
+  <div class="lineSlider4">
+  </div>
+
+  <div class="lineSlider5">
+  </div>
+
+  <div class="lineSlider6">
+  </div>
+
+  <div class="lineSlider7">
+  </div>
+
+  <div class="lineSlider8">
+  </div>
+
+  <div class="lineSlider9">
+  </div>
+
+  <div class="lineSlider10">
+  </div>
+
+  <div class="lineSlider11">
+  </div>
+
+  <div class="lineSlider12">
+  </div>
+
+  <div class="lineSlider13">
+  </div>
+
+  <div class="lineSlider14">
+  </div>
+
+  <div class="lineSlider15">
+  </div>
+
+  <div class="lineSlider16">
+  </div>
+
+  <div class="lineSlider17">
+  </div>
+
+  <div class="lineSlider18">
+  </div>
+
+
+  <div class="container">
+    <div class="grid"></div>
+    <div class="flagsLeft"><h1 style="color:cyan">Flags left: <span id='flags-left'></span></h1></div>
+    <div id="result"></div>
+  </div>
+
+  <div class="bombRetry">
+    <h1 style="color:black">Retry!</h1>
+    <button class="bombRetryBTN" onclick="window.location.href = 'ExplosiveWiper.html'"></button>
+    </div>
+
+    <div class="bombBack">
+      <h5 style="color:black">Back to Game Library</h5>
+      <button class="bombBackBTN" onclick="window.location.href = 'GameLib.html'"></button>
+      </div>
+
+</body>
+</html>
